@@ -1,0 +1,73 @@
+.company-box {
+    display: flex;
+    gap: 30px;
+
+}
+
+.our-company {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--button-color);
+}
+
+.text-company {
+    background-color: var(--main-light-color);
+}
+
+.company-info {
+    text-align: center;
+    padding: 30px;
+}
+
+.img-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1;
+    color: var(--main-color);
+    letter-spacing: 0.03em;
+}
+
+.foto-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    color: var(--secondary-color);
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: background-color var(--trnsition-dur-and-func);
+
+    &:hover,
+    &:focus {
+            background-color: var(--accent-color);
+        }
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social-list-icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill var(--trnsition-dur-and-func);
+
+    .social-list-link:hover &,
+    .social-list-link:focus & {
+        fill: #ffffff;
+    }
+}
