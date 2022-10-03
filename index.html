@@ -39,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="open-mobile-menu-btn">
+        <button type="button" class="open-mobile-menu-btn js-open-menu">
           <svg class="open-mobile-menu-btn-icon">
             <use href="./images/symbol-defs2.svg#icon-burger"></use>
           </svg>
@@ -73,8 +73,60 @@
           </li>
         </ul>
       </div>
-      <div class="mobil-menu">
-        <div class="container"></div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/symbol-defs2.svg#icon-close-mobile"></use>
+            </svg>
+          </button>
+          <ul class="menu-mobile">
+            <li class="menu-mobile__item">
+              <a
+                class="link menu-mobile__link current-studio"
+                href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="menu-mobile__item">
+              <a class="link menu-mobile__link" href="portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="menu-mobile__item">
+              <a class="link menu-mobile__link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <ul class="menu-mobile__contact">
+            <li class="menu-mobile__list">
+              <a
+                class="link menu-mobile__link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="menu-mobile__list">
+              <a class="link menu-mobile__link" href="tel:380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-mobile__social">
+            <li class="menu-mobile__social-list">
+              <a class="menu-mobile__social_link" href="Instagram">Instagram</a>
+            </li>
+            <li class="menu-mobile__social-list">
+              <a class="menu-mobile__social_link" href="Twitter">Twitter</a>
+            </li>
+            <li class="menu-mobile__social-list">
+              <a class="menu-mobile__social_link" href="Facebook">Facebook</a>
+            </li>
+            <li class="menu-mobile__social-list">
+              <a class="menu-mobile__social_link" href="LinkedIn">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- <main>
@@ -713,8 +765,10 @@
           <button type="submit" class="modal-form-submit">Відправити</button>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script>
   </body>
 </html> -->
   </body>
