@@ -24,16 +24,10 @@
     justify-content: space-between;
 }
 
-.page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
 
-// .page-header {
-//     border-bottom: 1px solid #ECECEC;
 
-//     background-color: var(--main-light-color);
-// }
+
+
 
 // .page-header {
 //     display: flex;
@@ -57,10 +51,7 @@
     color: var(--accent-color);
 }
 
-// .page-navigation {
-//     display: flex;
-//     align-items: center;
-// }
+
 
 // .menu {
 //     display: flex;
@@ -80,22 +71,22 @@
 //     gap: 50px;
 // }
 
-// .menu__link {
-//     padding-top: 32px;
-//     padding-bottom: 32px;
+.menu__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-//     color: var(--main-color);
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.1;
-//     letter-spacing: 0.02em;
-// }
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+}
  
-// .link.menu__link {
-//     position: relative;
-//     display: inline-block;
-//     transition: color var(--trnsition-dur-and-func);
-// }
+.link.menu__link {
+    position: relative;
+    display: inline-block;
+    transition: color var(--trnsition-dur-and-func);
+}
 
 // .link.header__link {
 //     display: flex;
@@ -134,17 +125,159 @@
 // }
 
 
-// .current-studio {
-//     color: var(--accent-color);
+.current-studio {
+    color: var(--accent-color);
 
-//     &::after {
-//             position: absolute;
-//             content: "";
-//             display: block;
-//             bottom: -1px;
-//             width: 100%;
-//             height: 4px;
-//             background-color: var(--accent-color);
-//             border-radius: 2px;
-//         }
+    &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            bottom: -1px;
+            width: 100%;
+            height: 4px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+}
+
+
+// .page-navigation {
+//     display: none;
 // }
+
+.header-contact {
+    display: none;
+}
+
+.page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+// .page-header {
+//     border-bottom: 1px solid var(--secondary-color);
+// }
+
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+
+    background-color: var(--main-light-color);
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:767px) {
+    .page-header__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+    .page-header {
+        padding-top: 10px;
+        padding-bottom: 9px;
+    }
+
+    .open-mobile-menu-btn {
+        background-color: transparent;
+        line-height: 0;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .open-mobile-menu-btn-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .open-mobile-menu-btn {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        column-gap: 50px;
+    }
+
+    .page-header__container {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-contact {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        margin-left: auto;
+    }
+
+    .header__list_width-email {
+        width: 138px;
+    }
+
+    .header__list_width-tell {
+        width: 123px;
+    }
+
+    .link.header__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-weight: 500;
+            font-size: 12px;
+            line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--secondary-color);
+
+        fill: currentColor;
+
+        transition: color var(--trnsition-dur-and-func);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .header-contact {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+    }
+
+    .header__list_width-email{
+        width: 161px;
+    }
+
+    .header__list_width-tell {
+        width: 142px;
+    }
+
+    .link.header__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.1;
+        padding: 32px 0;
+    }
+}
